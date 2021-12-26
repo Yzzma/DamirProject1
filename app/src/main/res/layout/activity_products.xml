@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#7C4B00"
+    app:layoutDescription="@xml/activity_products_scene">
+
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        app:layoutDescription="@xml/activity_products_scene"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/rectangle_7" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:letterSpacing="0.1"
+            android:lineSpacingMultiplier="1.2"
+            android:paddingStart="40dp"
+            android:paddingEnd="35dp"
+            android:text="Праздничный Торт «Три шоколада» состоит из шоколадно-орехового бисквита и трех поочередно залитых муссов на основе темного, молочного и белого шоколада. Бока торта обернуты в тонкий бисквит «Джаконд» изготовленный на основе миндальной муки, а в качестве декора нанесен рисунок ганашом из темного шоколада.\n\nМожете выбрать декор торта ."
+            android:textColor="@color/white" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <com.google.android.material.button.MaterialButton
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginEnd="80dp"
+                android:backgroundTint="#EBC489"
+                android:letterSpacing="0.2"
+                android:text="в корзину"
+                android:textAllCaps="false"
+                android:textColor="#7C4B00"
+                app:cornerRadius="15dp" />
+
+            <com.google.android.material.button.MaterialButton
+                style="@style/Widget.MaterialComponents.Button.OutlinedButton"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:backgroundTint="#7C4B00"
+                android:text="2000"
+                android:textColor="#EBC489"
+                app:cornerRadius="15dp"
+                app:strokeColor="#EBC489"
+                app:strokeWidth="3dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigatin_view"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="0dp"
+        android:layout_marginEnd="0dp"
+        android:background="#EBC489"
+        app:itemHorizontalTranslationEnabled="false"
+        app:labelVisibilityMode="unlabeled"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:menu="@menu/bottomnav" />
+</androidx.constraintlayout.widget.ConstraintLayout>
